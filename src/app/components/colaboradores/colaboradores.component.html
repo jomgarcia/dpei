@@ -1,0 +1,25 @@
+<div class="card text-center animated fadeIn" id="card-lg">
+  <div class="card-body">
+    <h3 class="card-title">Colaboradores</h3>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  </div>
+</div>
+<hr>
+<section id="team-section">
+  <div class="container">
+      <div class="row">
+          <h2 class="team2 text-center animated fadeIn" id="team2"></h2>
+          <div class="col-md-4 animated  fadeIn" *ngFor="let somo of somos" data-wow-duration="2s" data-wow-delay="300ms">
+              <div class="team-member text-center">
+                  <img [src]="somo.img" class="img-responsive" [alt]="somo.nombre">
+                  <div class="team-details">
+                      <h4>{{ somo.nombre }}</h4>
+                      <p>{{ somo.cargo }}</p>
+                      <p>{{ somo.correo }}</p>
+                      <p>{{ somo.tel }}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
