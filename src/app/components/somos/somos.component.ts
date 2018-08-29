@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-somos',
   templateUrl: './somos.component.html',
 })
-export class SomosComponent {
+export class SomosComponent  implements OnInit{
 
+
+  q
+
+  constructor(){
+
+  }
+
+  ngOnInit() {
+    
+    
+  }
 
 
 }
