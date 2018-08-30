@@ -8,9 +8,9 @@ import { OrganigramaService, somo} from '../../servicios/organigrama.services';
 })
 export class ColaboradoresComponent implements OnInit {
 
-  somos:somo[]= [];
+  somos: somo[]= [];
 
-  constructor( private _organigramaService:OrganigramaService) {
+  constructor( private _organigramaService: OrganigramaService) {
 
    }
 

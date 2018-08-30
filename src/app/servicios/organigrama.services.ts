@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class OrganigramaService {
 
-    private somos:somo[]=
+    private somos: somo[]=
     [
         {
           nombre: "Lic. Veranyces Ramírez",

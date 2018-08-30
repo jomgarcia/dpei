@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageServices, img } from '../../servicios/image.services';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  inicio: img[] = [];
+
+  constructor( private _imageServices: ImageServices) { }
 
   ngOnInit() {
+
+    this.inicio = this._imageServices.getinicio();
   }
 
 }

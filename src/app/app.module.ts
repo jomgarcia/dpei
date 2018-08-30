@@ -2,13 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-//Rutas
+// Rutas
 import { APP_ROUTING } from './app.routes';
 
-//servicios
+// servicios
 import { OrganigramaService } from './servicios/organigrama.services';
+import { ImageServices } from './servicios/image.services';
+import { GalleryServices } from './servicios/gallery.services';
 
-//component
+
+// component
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { InicioComponent} from './components/home/inicio.component';
@@ -20,6 +24,8 @@ import { IndicadoresComponent } from './components/indicadores/indicadores.compo
 import { ContactosComponent } from './components/contactos/contactos.component';
 import { ColaboradoresComponent } from './components/colaboradores/colaboradores.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { PagesComponent } from './pages/pages.component';
+
 
 
 
@@ -38,8 +44,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     IndicadoresComponent,
     ContactosComponent,
     ColaboradoresComponent,
-    GalleryComponent
-    
+    GalleryComponent,
+    PagesComponent
 
   ],
   imports: [
@@ -47,7 +53,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     APP_ROUTING
   ],
   providers: [
-    OrganigramaService
+    OrganigramaService,
+    ImageServices,
+    GalleryServices
   ],
   bootstrap: [AppComponent]
 })
