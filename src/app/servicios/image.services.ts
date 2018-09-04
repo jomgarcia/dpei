@@ -11,6 +11,7 @@ export class ImageServices {
                       img5: "assets/img/undraw_files1_9ool.svg",
                       img6: "assets/img/report.svg",
                       img7: "assets/img/undraw_charts_jj6t.svg"
+                      
                   }
     ];
 
@@ -30,4 +31,5 @@ export interface img {
     img5: string;
     img6: string;
     img7: string;
+   
 }

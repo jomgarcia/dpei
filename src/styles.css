@@ -51,6 +51,10 @@ header {
     font-size: 18px;
 }
 
+span {
+    font-style: italic;
+}
+
 
 /*Navbar*/
 
@@ -88,6 +92,9 @@ header {
 .icon-bar {
     background: #fff;
 }
+
+
+/*menu a la derecha*/
 
 
 /*.navbar-toggler-icon .icon-bar{
@@ -735,6 +742,11 @@ h3 {
 
 #dpei {
     text-align: justify;
+}
+
+#dpei2 {
+    text-align: justify;
+    margin-top: 10px;
 }
 
 hr {

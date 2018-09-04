@@ -5,13 +5,16 @@ import { NgModule } from '@angular/core';
 // Rutas
 import { APP_ROUTING } from './app.routes';
 
+
 // servicios
 import { OrganigramaService } from './servicios/organigrama.services';
 import { ImageServices } from './servicios/image.services';
 import { GalleryServices } from './servicios/gallery.services';
+import { SomosService } from './servicios/somos.service';
 
 
 // component
+import { PagesComponent } from './pages/pages.component';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
@@ -24,7 +27,7 @@ import { IndicadoresComponent } from './components/indicadores/indicadores.compo
 import { ContactosComponent } from './components/contactos/contactos.component';
 import { ColaboradoresComponent } from './components/colaboradores/colaboradores.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
-import { PagesComponent } from './pages/pages.component';
+
 
 
 
@@ -55,7 +58,8 @@ import { PagesComponent } from './pages/pages.component';
   providers: [
     OrganigramaService,
     ImageServices,
-    GalleryServices
+    GalleryServices,
+    SomosService
   ],
   bootstrap: [AppComponent]
 })

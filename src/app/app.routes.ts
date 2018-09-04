@@ -1,6 +1,7 @@
 import { PagesComponent } from './pages/pages.component';
 
 import { RouterModule, Routes } from '@angular/router';
+
 import { InicioComponent } from './components/home/inicio.component';
 import { SomosComponent } from './components/somos/somos.component';
 import { DocumentosComponent } from './components/documentos/documentos.component';
@@ -30,4 +31,4 @@ const APP_ROUTES: Routes = [
       { path: 'gallery', component: GalleryComponent },
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, { useHash: true });
+export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);

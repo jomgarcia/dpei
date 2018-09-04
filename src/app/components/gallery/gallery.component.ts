@@ -3,7 +3,8 @@ import { GalleryServices, galeria } from '../../servicios/gallery.services';
 
 @Component({
   selector: 'app-gallery',
-  templateUrl: './gallery.component.html'
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.css']
 })
 
 export class GalleryComponent implements OnInit {
